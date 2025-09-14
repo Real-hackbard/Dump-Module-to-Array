@@ -1,0 +1,11 @@
+LIBRARY dsufmod
+EXPORTS
+uFMOD_DSPlaySong
+uFMOD_Jump2Pattern
+uFMOD_Pause
+uFMOD_Resume
+uFMOD_GetTime
+uFMOD_GetStats
+uFMOD_GetRowOrder
+uFMOD_GetTitle
+uFMOD_SetVolume

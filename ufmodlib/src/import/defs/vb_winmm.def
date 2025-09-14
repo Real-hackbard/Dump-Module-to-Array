@@ -1,0 +1,31 @@
+; uFMOD : import lib for VB6
+
+include '..\implib.inc'
+
+; WINMM.DLL
+implib winmm.dll, waveOutUnprepareHeader, _waveOutUnprepareHeader@12, __imp__waveOutUnprepareHeader@12
+implib winmm.dll, waveOutWrite, _waveOutWrite@12, __imp__waveOutWrite@12
+implib winmm.dll, waveOutClose, _waveOutClose@4, __imp__waveOutClose@4
+implib winmm.dll, waveOutGetPosition, _waveOutGetPosition@12, __imp__waveOutGetPosition@12
+implib winmm.dll, waveOutOpen, _waveOutOpen@24, __imp__waveOutOpen@24
+implib winmm.dll, waveOutPrepareHeader, _waveOutPrepareHeader@12, __imp__waveOutPrepareHeader@12
+implib winmm.dll, waveOutReset, _waveOutReset@4, __imp__waveOutReset@4
+
+; KERNEL32.DLL
+implib kernel32.dll, CreateFileA, _CreateFileA@28, __imp__CreateFileA@28
+implib kernel32.dll, CreateFileW, _CreateFileW@28, __imp__CreateFileW@28
+implib kernel32.dll, ReadFile, _ReadFile@20, __imp__ReadFile@20
+implib kernel32.dll, SetFilePointer, _SetFilePointer@16, __imp__SetFilePointer@16
+implib kernel32.dll, CloseHandle, _CloseHandle@4, __imp__CloseHandle@4
+implib kernel32.dll, CreateThread, _CreateThread@24, __imp__CreateThread@24
+implib kernel32.dll, SetThreadPriority, _SetThreadPriority@8, __imp__SetThreadPriority@8
+implib kernel32.dll, WaitForSingleObject, _WaitForSingleObject@8, __imp__WaitForSingleObject@8
+implib kernel32.dll, FindResourceA, _FindResourceA@12, __imp__FindResourceA@12
+implib kernel32.dll, LoadResource, _LoadResource@8, __imp__LoadResource@8
+implib kernel32.dll, HeapAlloc, _HeapAlloc@12, __imp__HeapAlloc@12
+implib kernel32.dll, HeapCreate, _HeapCreate@12, __imp__HeapCreate@12
+implib kernel32.dll, HeapDestroy, _HeapDestroy@4, __imp__HeapDestroy@4
+implib kernel32.dll, SizeofResource, _SizeofResource@8, __imp__SizeofResource@8
+implib kernel32.dll, Sleep, _Sleep@4, __imp__Sleep@4
+
+endlib

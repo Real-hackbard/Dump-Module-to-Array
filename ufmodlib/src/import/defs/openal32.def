@@ -1,0 +1,119 @@
+; OpenAL versions 1.0 and 1.1 import lib
+
+include '..\implib.inc'
+
+; Strip original thunks
+KEEP_ORIGINAL_THUNKS equ 0
+
+; Buffer-related
+implib openal32.dll, alGenBuffers, _alGenBuffers, __imp__alGenBuffers
+implib openal32.dll, alDeleteBuffers, _alDeleteBuffers, __imp__alDeleteBuffers
+implib openal32.dll, alIsBuffer, _alIsBuffer, __imp__alIsBuffer
+implib openal32.dll, alBufferData, _alBufferData, __imp__alBufferData
+implib openal32.dll, alBufferf, _alBufferf, __imp__alBufferf
+implib openal32.dll, alBuffer3f, _alBuffer3f, __imp__alBuffer3f
+implib openal32.dll, alBufferfv, _alBufferfv, __imp__alBufferfv
+implib openal32.dll, alBufferi, _alBufferi, __imp__alBufferi
+implib openal32.dll, alBuffer3i, _alBuffer3i, __imp__alBuffer3i
+implib openal32.dll, alBufferiv, _alBufferiv, __imp__alBufferiv
+implib openal32.dll, alGetBufferf, _alGetBufferf, __imp__alGetBufferf
+implib openal32.dll, alGetBuffer3f, _alGetBuffer3f, __imp__alGetBuffer3f
+implib openal32.dll, alGetBufferfv, _alGetBufferfv, __imp__alGetBufferfv
+implib openal32.dll, alGetBufferi, _alGetBufferi, __imp__alGetBufferi
+implib openal32.dll, alGetBuffer3i, _alGetBuffer3i, __imp__alGetBuffer3i
+implib openal32.dll, alGetBufferiv, _alGetBufferiv, __imp__alGetBufferiv
+
+; Source-related
+implib openal32.dll, alGenSources, _alGenSources, __imp__alGenSources
+implib openal32.dll, alDeleteSources, _alDeleteSources, __imp__alDeleteSources
+implib openal32.dll, alIsSource, _alIsSource, __imp__alIsSource
+implib openal32.dll, alSourcef, _alSourcef, __imp__alSourcef
+implib openal32.dll, alSource3f, _alSource3f, __imp__alSource3f
+implib openal32.dll, alSourcefv, _alSourcefv, __imp__alSourcefv
+implib openal32.dll, alSourcei, _alSourcei, __imp__alSourcei
+implib openal32.dll, alSource3i, _alSource3i, __imp__alSource3i
+implib openal32.dll, alSourceiv, _alSourceiv, __imp__alSourceiv
+implib openal32.dll, alGetSourcef, _alGetSourcef, __imp__alGetSourcef
+implib openal32.dll, alGetSource3f, _alGetSource3f, __imp__alGetSource3f
+implib openal32.dll, alGetSourcefv, _alGetSourcefv, __imp__alGetSourcefv
+implib openal32.dll, alGetSourcei, _alGetSourcei, __imp__alGetSourcei
+implib openal32.dll, alGetSource3i, _alGetSource3i, __imp__alGetSource3i
+implib openal32.dll, alGetSourceiv, _alGetSourceiv, __imp__alGetSourceiv
+implib openal32.dll, alSourcePlay, _alSourcePlay, __imp__alSourcePlay
+implib openal32.dll, alSourcePlayv, _alSourcePlayv, __imp__alSourcePlayv
+implib openal32.dll, alSourcePause, _alSourcePause, __imp__alSourcePause
+implib openal32.dll, alSourcePausev, _alSourcePausev, __imp__alSourcePausev
+implib openal32.dll, alSourceStop, _alSourceStop, __imp__alSourceStop
+implib openal32.dll, alSourceStopv, _alSourceStopv, __imp__alSourceStopv
+implib openal32.dll, alSourceRewind, _alSourceRewind, __imp__alSourceRewind
+implib openal32.dll, alSourceRewindv, _alSourceRewindv, __imp__alSourceRewindv
+implib openal32.dll, alSourceQueueBuffers, _alSourceQueueBuffers, __imp__alSourceQueueBuffers
+implib openal32.dll, alSourceUnqueueBuffers, _alSourceUnqueueBuffers, __imp__alSourceUnqueueBuffers
+
+; Listener-related
+implib openal32.dll, alListenerf, _alListenerf, __imp__alListenerf
+implib openal32.dll, alListener3f, _alListener3f, __imp__alListener3f
+implib openal32.dll, alListenerfv, _alListenerfv, __imp__alListenerfv
+implib openal32.dll, alListeneri, _alListeneri, __imp__alListeneri
+implib openal32.dll, alListener3i, _alListener3i, __imp__alListener3i
+implib openal32.dll, alListeneriv, _alListeneriv, __imp__alListeneriv
+implib openal32.dll, alGetListenerf, _alGetListenerf, __imp__alGetListenerf
+implib openal32.dll, alGetListener3f, _alGetListener3f, __imp__alGetListener3f
+implib openal32.dll, alGetListenerfv, _alGetListenerfv, __imp__alGetListenerfv
+implib openal32.dll, alGetListeneri, _alGetListeneri, __imp__alGetListeneri
+implib openal32.dll, alGetListener3i, _alGetListener3i, __imp__alGetListener3i
+implib openal32.dll, alGetListeneriv, _alGetListeneriv, __imp__alGetListeneriv
+
+; State-related
+implib openal32.dll, alEnable, _alEnable, __imp__alEnable
+implib openal32.dll, alDisable, _alDisable, __imp__alDisable
+implib openal32.dll, alIsEnabled, _alIsEnabled, __imp__alIsEnabled
+implib openal32.dll, alGetBoolean, _alGetBoolean, __imp__alGetBoolean
+implib openal32.dll, alGetDouble, _alGetDouble, __imp__alGetDouble
+implib openal32.dll, alGetFloat, _alGetFloat, __imp__alGetFloat
+implib openal32.dll, alGetInteger, _alGetInteger, __imp__alGetInteger
+implib openal32.dll, alGetBooleanv, _alGetBooleanv, __imp__alGetBooleanv
+implib openal32.dll, alGetDoublev, _alGetDoublev, __imp__alGetDoublev
+implib openal32.dll, alGetFloatv, _alGetFloatv, __imp__alGetFloatv
+implib openal32.dll, alGetIntegerv, _alGetIntegerv, __imp__alGetIntegerv
+implib openal32.dll, alcGetIntegerv, _alcGetIntegerv, __imp__alcGetIntegerv
+implib openal32.dll, alGetString, _alGetString, __imp__alGetString
+implib openal32.dll, alcGetString, _alcGetString, __imp__alcGetString
+implib openal32.dll, alDistanceModel, _alDistanceModel, __imp__alDistanceModel
+implib openal32.dll, alDopplerFactor, _alDopplerFactor, __imp__alDopplerFactor
+implib openal32.dll, alDopplerVelocity, _alDopplerVelocity, __imp__alDopplerVelocity ; Deprecated in v1.1: use alSpeedOfSound instead!
+implib openal32.dll, alSpeedOfSound, _alSpeedOfSound, __imp__alSpeedOfSound
+
+; Error-related
+implib openal32.dll, alGetError, _alGetError, __imp__alGetError
+implib openal32.dll, alcGetError, _alcGetError, __imp__alcGetError
+
+; Extension-related
+implib openal32.dll, alIsExtensionPresent, _alIsExtensionPresent, __imp__alIsExtensionPresent
+implib openal32.dll, alcIsExtensionPresent, _alcIsExtensionPresent, __imp__alcIsExtensionPresent
+implib openal32.dll, alGetProcAddress, _alGetProcAddress, __imp__alGetProcAddress
+implib openal32.dll, alcGetProcAddress, _alcGetProcAddress, __imp__alcGetProcAddress
+implib openal32.dll, alGetEnumValue, _alGetEnumValue, __imp__alGetEnumValue
+implib openal32.dll, alcGetEnumValue, _alcGetEnumValue, __imp__alcGetEnumValue
+
+; Context-related
+implib openal32.dll, alcCreateContext, _alcCreateContext, __imp__alcCreateContext
+implib openal32.dll, alcMakeContextCurrent, _alcMakeContextCurrent, __imp__alcMakeContextCurrent
+implib openal32.dll, alcProcessContext, _alcProcessContext, __imp__alcProcessContext
+implib openal32.dll, alcSuspendContext, _alcSuspendContext, __imp__alcSuspendContext
+implib openal32.dll, alcDestroyContext, _alcDestroyContext, __imp__alcDestroyContext
+implib openal32.dll, alcGetCurrentContext, _alcGetCurrentContext, __imp__alcGetCurrentContext
+implib openal32.dll, alcGetContextsDevice, _alcGetContextsDevice, __imp__alcGetContextsDevice
+
+; Device-related
+implib openal32.dll, alcOpenDevice, _alcOpenDevice, __imp__alcOpenDevice
+implib openal32.dll, alcCloseDevice, _alcCloseDevice, __imp__alcCloseDevice
+
+; Capture-related
+implib openal32.dll, alcCaptureOpenDevice, _alcCaptureOpenDevice, __imp__alcCaptureOpenDevice
+implib openal32.dll, alcCaptureCloseDevice, _alcCaptureCloseDevice, __imp__alcCaptureCloseDevice
+implib openal32.dll, alcCaptureStart, _alcCaptureStart, __imp__alcCaptureStart
+implib openal32.dll, alcCaptureStop, _alcCaptureStop, __imp__alcCaptureStop
+implib openal32.dll, alcCaptureSamples, _alcCaptureSamples, __imp__alcCaptureSamples
+
+endlib

@@ -1,0 +1,32 @@
+; DSUFMOD.DESC
+; ------------
+; uFMOD public source code release. Provided as-is.
+; PureBasic library description. Requires PureBasic v3.50 or later.
+; Driver: DirectX DirectSound
+
+ASM
+1
+kernel32
+OBJ
+0
+uFMOD.chm
+uFMOD_DSPlaySong, Any, Any, Long, Long, (lpXM, param, fdwSong, lpDSBuffer) - Starts playing an XM song
+Long | StdCall
+uFMOD_DSStopSong
+EndFunction
+uFMOD_DSJump2Pattern, Long, (pat) - Jumps to the specified zero based pattern index
+None
+uFMOD_DSPause () - Pauses the currently playing song, if any
+None
+uFMOD_DSResume () - Resumes the currently paused song, if any
+None
+uFMOD_DSGetStats () - Returns the L RMS volume in hi-order word and R RMS in low-order word
+Long
+uFMOD_DSGetRowOrder () - Returns the current order in hi-order word and row in low-order word
+Long
+uFMOD_DSGetTime () - Returns the time in milliseconds since the song was started
+Long
+uFMOD_DSGetTitle () - Returns the track's title
+String | Unicode
+uFMOD_DSSetVolume, Long, (vol) - Sets global volume: 0 - 25
+None
