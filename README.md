@@ -43,6 +43,8 @@ Not going to play files - only memory arrays? Then, you'd probably like to use /
   (lower-case letter L) makes uFMOD ignore the XM_NOLOOP flag (and makes the library smaller and faster, as expected).
 Finally, a really insane optimization option is available only for assembly coders. There are some byte chunks inside every XM file, which are reserved for future use or just holding metadata (comments, adds and so on). /M marks all such 'holes' in the hex dump and makes them available for something more useful, like storing code and/or data right inside the XM track.
 
+</br>
+
 The above commands produce an assembly dump with all the 'holes' properly outlined and cleared by default. The EFF.INC header contains the XM effects actually used in the given XM file and some additional flags to disable pause/resume, volume control, Jump2Pattern, loading files and XM_NOLOOP. Copy EFF.INC to ufmodlib/src/ and recompile the library (check the following section for a quick guide). Enjoy your own extremely optimized uFMOD build, but keep in mind that it contains a subset of XM effects. So, it will play normally only the given XM file!
 
 ### Code Example:  
