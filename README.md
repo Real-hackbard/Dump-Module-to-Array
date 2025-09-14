@@ -18,6 +18,15 @@ This is more advantageous than embedding an audio file in an executable and acce
 
 Is useful for advanced users, willing to squeeze every single byte out of their applications. The general idea is to extract only those features you do mean to use in your application, recompile the uFMOD library from source and obtain the smallest possible footprint.
 
+Code Select:
+* mASM
+* tASM
+* fASM
+* nASM
+* Pascal (Delphi Example)
+* C/C++
+* RCDATA (Resource)
+
 </br>
 
 ![Dump Module to Array](https://github.com/user-attachments/assets/d5b5e91f-a85a-40f2-a0fa-caceaf7505cb)
