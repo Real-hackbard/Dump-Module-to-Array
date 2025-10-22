@@ -1,0 +1,34 @@
+FAQ
+
+Q: Is uFMOD free for any type of use? Even commercial?
+A: Yes, currently it is.
+
+Q: Where can I get XM files from?
+A: Try visiting The Mod Archive. They have a huge archive of free tracker music in XM, IT, S3M and MOD format. You can use Open Modplug Tracker to convert IT, S3M and MOD tracks to XM format without apparent degradation. There are many talented composers out there in the web sharing their music at no cost. Just don't forget the copyright!
+
+Q: Is uFMOD related in some way to Firelight Technologies® FMOD and miniFMOD sound libraries?
+A: Not any more. Up until 2004 uFMOD was based on the latest miniFMOD public source code release. Since then, library sources had been completely rewritten, introducing many new features. So, uFMOD is in no way representative of FMOD and miniFMOD sources.
+
+Q: Some XM player libraries claim to add only N kilobytes to the executable file. How many Kb does uFMOD add exactly to the executable's size?
+A: It is impossible to tell an exact value, because it depends on library features used (especially, when using the Eff utility), test program code layout, XM file size (when embedding the XM into the EXE). It also depends on the linker options. For example, MASM32\minimal.exe is 5.632 bytes without compression, PE format hacking or any other dirty size optimization tricks.
+
+Q: Where can I get the official XM file format specification from?
+A: No official and up to date specification exists. However, you can take a look at "The Unofficial XM File Format Specification: FastTracker II, ADPCM and Stripped Module Subformats". This document covers most aspects of the original XM file format and all the non-standard extensions currently supported by uFMOD. ModePlug's public source code (it's C++) also serves as reference material on module file formats.
+
+ 
+Thanks go out to
+
+antarman, Barracuda, bogrus, chris_b, cresta, dododo, flaith, Four-F, GL#0M, norki, q_q, SofT MANiAC, S_T_A_S_, ts-soft, voodooattack and yoxola for reporting bugs, requesting interesting features, submitting usage examples and otherwise helping us improve uFMOD.
+
+[WASM.RU] and SourceForge.net for support and hosting.
+
+ 
+Copyright
+
+uFMOD sources, binaries and utility programs © 2005 - 2008 Asterix and Quantum.
+All rights reserved.
+
+Sample tunes:
+
+Minimal III © 2006 - 2008 SofT MANiAC (CoolPHat).
+BlitzXMK.XM from Jump2Pat example © 2007 - 2008 Kim (aka norki).
